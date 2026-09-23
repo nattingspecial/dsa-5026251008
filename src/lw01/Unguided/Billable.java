@@ -1,4 +1,4 @@
-package lw01.unguided;
+package lw01.Unguided;
 
 public interface Billable {
      int calculateCharge();

@@ -1,4 +1,4 @@
-package lw01.unguided;
+package lw01.Unguided;
 
 public class CarWash extends WashService {
     private static final int FIRST_DAYS_CHARGE = 35000;

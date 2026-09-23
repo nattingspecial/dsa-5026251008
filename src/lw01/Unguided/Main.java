@@ -1,4 +1,4 @@
-package lw01.unguided;
+package lw01.Unguided;
 
 import java.io.File;
 import java.io.FileNotFoundException;
