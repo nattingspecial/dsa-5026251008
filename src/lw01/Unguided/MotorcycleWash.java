@@ -1,4 +1,4 @@
-package lw01.Unguided;
+package lw01.unguided;
 
 public class MotorcycleWash extends WashService {
     private static final int DAILY_CHARGE = 15000;
