@@ -9,11 +9,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         List<PrintJob> jobs = new ArrayList<>();
-
+        
         try {
             File file = new File("src/lw01/prelab/jobs.txt");
             Scanner scanner = new Scanner(file);
-
+            
             while (scanner.hasNext()) {
                 String type = scanner.next();
                 String id = scanner.next();
@@ -31,7 +31,7 @@ public class Main {
             return;
         }
 
-        // Loop polimorfisme (tanpa instanceof / casting)
+        
         for (PrintJob job : jobs) {
             System.out.println(job.summary());
         }
