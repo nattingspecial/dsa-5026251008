@@ -9,17 +9,16 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class Main {
-
+    
     public static void main(String[] args) {
         solveProblem1();
         solveProblem2();
         solveProblem3();
     }
 
-    // Problem 1: List implementation for Playlist Management
     private static void solveProblem1() {
         List<String> playlist = new ArrayList<>();
-        File file = new File("src/lw03/prelab/playlists.txt");
+        File file = new File("src/lw03/prelab/playlist.txt");
 
         try (Scanner scanner = new Scanner(file)) {
             while (scanner.hasNextLine()) {
@@ -42,7 +41,7 @@ public class Main {
                 }
             }
         } catch (FileNotFoundException e) {
-            System.err.println("File playlists.txt tidak ditemukan.");
+            System.err.println("File playlist.txt tidak ditemukan.");
             return;
         }
 
@@ -53,7 +52,6 @@ public class Main {
         }
     }
 
-    // Problem 2: Set implementation for Workshop Participants
     private static void solveProblem2() {
         Set<String> uniqueParticipants = new LinkedHashSet<>();
         int duplicateCount = 0;
@@ -83,7 +81,6 @@ public class Main {
         System.out.println("Duplicate registrations: " + duplicateCount);
     }
 
-    // Problem 3: Map implementation for Product Inventory
     private static void solveProblem3() {
         Map<String, Integer> inventory = new LinkedHashMap<>();
         int failedSales = 0;
